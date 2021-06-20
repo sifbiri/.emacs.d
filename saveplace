@@ -1,12 +1,5 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/client.cljs" . 2161)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/.."))
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model"))
- ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro-rad/d30b318c75b2938555ff12d617b62c21ba041957/src/main/com/fulcrologic/rad/attributes.cljc" . 2231)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.control.cljc" . 2497)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.form.cljc" . 6083)
+(("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.form.cljc" . 6083)
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/ui.cljc" . 431)
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/parser.clj" . 1527)
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/auto_resolvers.clj" . 361)
@@ -14,22 +7,19 @@
  ("/Users/sb/Projects/Other/fulcro-rad-semantic-ui/src/main/com/fulcrologic/rad/rendering/semantic_ui/form.cljc" . 18400)
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/management_forms.cljc" . 7488)
  ("/Users/sb/.emacs.d/modus-themes/modus-vivendi-theme.el" . 2631)
- ("/Users/sb/Projects/Knowbie/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/iOS"))
+ ("/Users/sb/Projects/Knowbie/" . 592)
  ("/Users/sb/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Swift/iOSStanford/RealmTest/RealmTest/Example2.swift" . 7676)
  ("/Users/sb/Projects/Knowbie/iOS/Knowbie/Seed/SampleData.swift" . 84)
  ("/Users/sb/Projects/Knowbie/iOS/Knowbie/Helpers/SampleData.swift" . 705)
  ("/Users/sb/Projects/Knowbie/iOS/Knowbie/Model/Module.swift" . 469)
- ("/Users/sb/Projects/Knowbie/iOS/Knowbie/ContentView.swift" . 1095)
+ ("/Users/sb/Projects/Knowbie/iOS/Knowbie/ContentView.swift" . 1094)
  ("/Users/sb/Projects/Knowbie/iOS/Knowbie/Views/Home/AchievementBar.swift" . 466)
  ("/Users/sb/"
   (dired-filename . "/Users/sb/Projects"))
  ("/Users/sb/Projects/"
-  (dired-filename . "/Users/sb/Projects/Other"))
+  (dired-filename . "/Users/sb/Projects/Knowbie iterations"))
  ("/Users/sb/Projects/Other/"
   (dired-filename . "/Users/sb/Projects/Other/kv-rad"))
- ("/Users/sb/Projects/Other/kv-rad/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/resources"))
  ("/Users/sb/Projects/Other/kv-rad/src/"
   (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/dev"))
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/database_queries.clj" . 3165)
@@ -42,11 +32,23 @@
  ("/Users/sb/Projects/Knowbie/iOS/Knowbie/Helpers/TestView.swift" . 104)
  ("/Users/sb/.emacs.d/modus-themes/modus-themes.el" . 23730)
  ("/Users/sb/Projects/Knowbie/iOS/Knowbie/Views/Module/Quiz/WrappingHStack.swift" . 2090)
- ("/Users/sb/Projects/Knowbie/iOS/Podfile" . 933)
+ ("/Users/sb/Projects/Knowbie/iOS/Podfile" . 932)
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/"
   (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/operator.cljc"))
- ("/Users/sb/Projects/Other/kv-rad/deps.edn" . 5190)
+ ("/Users/sb/Projects/Other/kv-rad/"
+  (dired-filename . "/Users/sb/Projects/Other/kv-rad/.dir-locals.el"))
+ ("/Users/sb/Projects/Other/kv-rad/.dir-locals.el" . 396)
+ ("/Users/sb/Projects/Other/kv-rad/.gitignore" . 109)
+ ("/Users/sb/Projects/Knowbie/notes.org" . 1402)
+ ("/Users/sb/.emacs.d/.gitignore" . 546)
+ ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.control.cljc" . 2497)
  ("/Users/sb/.emacs.d/prot-emacs.org" . 22341)
+ ("/Users/sb/Projects/Other/kv-rad/deps.edn" . 4405)
+ ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/client.cljs" . 2161)
+ ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/"
+  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/.."))
+ ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/"
+  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model"))
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui.cljs" . 6244)
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/login_dialog.cljc" . 1379)
  ("/Users/sb/.emacs.d/workspace/.cache/postal.core.clj" . 1317)
@@ -64,8 +66,6 @@
  ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro-rad-semantic-ui/74c98c1c33644ff193deae2bcfdb548c7c3c6f21/src/main/com/fulcrologic/rad/semantic_ui_options.cljc" . 2491)
  ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro-rad/d30b318c75b2938555ff12d617b62c21ba041957/src/main/com/fulcrologic/rad/form_options.cljc" . 5762)
  ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro-rad/d30b318c75b2938555ff12d617b62c21ba041957/src/main/com/fulcrologic/rad/report_options.cljc" . 7000)
- ("/Users/sb/Projects/Other/kv-rad/.dir-locals.el" . 395)
- ("/Users/sb/Desktop/learn-emacs-lisp.el" . 9254)
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/seed.cljc" . 6262)
  ("/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters/key_value.cljc" . 2973)
  ("/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters/"
@@ -99,7 +99,6 @@
  ("/Users/sb/Projects/Other/konserve-monger/src/konserve_monger/core.clj" . 7343)
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/config/defaults.edn" . 575)
  ("/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters/key_value/konserve.cljc" . 1006)
- ("/Users/sb/Desktop/realm.js" . 48)
  ("/Users/sb/.emacs.d/modules/prelude-lsp.el" . 2073)
  ("/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters/key_value/pathom.cljc" . 13959)
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/"
@@ -200,8 +199,6 @@
   (dired-filename . "/Users/sb/Projects/Knowbie/Admin/src/main"))
  ("/Users/sb/Projects/Knowbie/Admin/src/main/"
   (dired-filename . "/Users/sb/Projects/Knowbie/Admin/src/main/app"))
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/Admin/src/main/app/util.cljc"))
  ("/Users/sb/.emacs.d-modus/prot-emacs.org" . 84900)
  ("/Users/sb/.emacs.d-modus/early-init.el" . 2044)
  ("/Users/sb/.emacs.d-modus/init.el" . 10344)
@@ -210,7 +207,6 @@
  ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.report_options.cljc" . 5)
  ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.authorization.cljc" . 5)
  ("/Users/sb/Projects/Other/fulcro-rad-demo/deps.edn" . 2251)
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/ui/operator.cljs" . 1709)
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/address.cljc" . 628)
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/address_forms.cljc" . 526)
  ("/Users/sb/.emacs.d/savefile/recentf" . 7397)
@@ -230,13 +226,8 @@
   (dired-filename . "/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/src/main/com/fulcrologic/fulcro/alpha"))
  ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/"
   (dired-filename . "/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/.circleci"))
- ("/Users/sb/Projects/Knowbie/Admin/src/main/config/defaults.edn" . 108)
  ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/src/main/com/fulcrologic/fulcro/alpha/raw_components2.cljc" . 13253)
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/model/session.cljs" . 1014)
  ("/Users/sb/Projects/Knowbie/Admin/src/dev/user.clj" . 823)
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/ui/root.cljs" . 2540)
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/model/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/Admin/src/main/app/model/session.clj"))
  ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/src/main/com/fulcrologic/fulcro/mutations.cljc" . 23255)
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/timezone.cljc" . 33783)
  ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.type_support.date_time.cljc" . 952)
@@ -256,10 +247,6 @@
   (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example"))
  ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/item_forms.cljc" . 2958)
  ("/Users/sb/Projects/Knowbie/Admin/deps.edn" . 1457)
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/ui/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/Admin/src/main/app/ui/operator.cljs"))
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/model/operator.cljs" . 4171)
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/model/session.clj" . 2010)
  ("/Users/sb/.emacs.d/elpa/dired-sidebar-20210411.2315/dired-sidebar-autoloads.el" . 1224)
  ("/Users/sb/.emacs.d/elpa/dired-subtree-20210105.1127/dired-subtree-autoloads.el" . 3057)
  ("/Users/sb/.emacs.d/elpa/dired-hacks-utils-20201005.2318/dired-hacks-utils-autoloads.el" . 460)

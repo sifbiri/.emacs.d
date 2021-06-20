@@ -1,8 +1,8 @@
 ;;; -*- lisp-data -*-
 (("~/Projects/Other/kv-rad/")
+ ("~/.gitlibs/libs/com.fulcrologic/fulcro-rad/d30b318c75b2938555ff12d617b62c21ba041957/")
  ("~/Projects/Knowbie/iOS/")
  ("~/Projects/Other/fulcro-rad-semantic-ui/")
- ("~/.gitlibs/libs/com.fulcrologic/fulcro-rad/d30b318c75b2938555ff12d617b62c21ba041957/")
  ("~/.gitlibs/libs/com.fulcrologic/fulcro-rad-semantic-ui/74c98c1c33644ff193deae2bcfdb548c7c3c6f21/")
  ("~/Projects/Other/konserve-monger/")
  ("~/.emacs.d/")

@@ -6,10 +6,7 @@
  '(highlight-indent-guides-method 'bitmap)
  '(line-spacing 0.2)
  '(safe-local-variable-values
-   '((cider-ns-refresh-after-fn . "development/go")
-     (cider-ns-refresh-before-fn . "development/stop")
-     (eval put-clojure-indent :require 0)
-     (eval progn
+   '((eval progn
            (make-variable-buffer-local 'cider-jack-in-nrepl-middlewares)
            (add-to-list 'cider-jack-in-nrepl-middlewares "shadow.cljs.devtools.server.nrepl/middleware")))))
 (custom-set-faces
