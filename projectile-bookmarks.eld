@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/Projects/Other/fulcro-rad-demo/" "~/Projects/Other/fulcro-rad-kvstore/" "~/Projects/Other/kv-rad/" "~/Projects/Other/konserve-monger/" "~/Projects/Knowbie/Admin/" "~/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/" "~/Projects/Knowbie/iOS/")

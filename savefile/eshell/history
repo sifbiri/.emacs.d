@@ -1,0 +1,18 @@
+yarn upgrade
+cd .. 
+cd .. 
+cd .. 
+cd .. 
+cd.. 
+cd .. 
+yarn 
+yarn upgrade
+yarn upgrade
+yarn upgrade
+cd ../..
+cd ..
+cd ../..
+rm -rf .shadow-cljs/
+yarn upgrade
+yarn 
+yarn upgrade

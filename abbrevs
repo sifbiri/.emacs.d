@@ -1,0 +1,7 @@
+;;-*-coding: utf-8;-*-
+(define-abbrev-table 'global-abbrev-table
+  '(
+    ("megit" "" protesilaos-gitlab-skeleton :count 0)
+    ("meweb" "" protesilaos-com-skeleton :count 0)
+   ))
+

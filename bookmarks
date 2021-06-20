@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("modus-themes.el"
+ (filename . "~/.emacs.d/modus-themes/modus-themes.el")
+ (front-context-string . "cyan-alt-other))")
+ (rear-context-string . "alt-other-faint ")
+ (position . 225330))
+("form.cljc"
+ (filename . "~/.gitlibs/libs/com.fulcrologic/fulcro-rad-semantic-ui/74c98c1c33644ff193deae2bcfdb548c7c3c6f21/src/main/com/fulcrologic/rad/rendering/semantic_ui/form.cljc")
+ (front-context-string . "r \"The form has ")
+ (rear-context-string . "error.message (t")
+ (position . 19920))
+)
