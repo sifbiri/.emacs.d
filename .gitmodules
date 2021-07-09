@@ -1,0 +1,15 @@
+[submodule "contrib-lisp/project-x"]
+	path = contrib-lisp/project-x
+	url = https://github.com/karthink/project-x.git
+[submodule "git-email"]
+	path = git-email
+	url = https://git.sr.ht/~yoctocell/git-email
+[submodule "contrib-lisp/notmuch"]
+	path = contrib-lisp/notmuch
+	url = https://github.com/notmuch/notmuch.git
+[submodule "contrib-lisp/git-email"]
+	path = contrib-lisp/git-email
+	url = https://git.sr.ht/~yoctocell/git-email
+[submodule "contrib-lisp/rlist"]
+	path = contrib-lisp/rlist
+	url = https://gitlab.com/mmemmew/rlist

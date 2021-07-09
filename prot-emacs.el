@@ -80,11 +80,11 @@
   (prot-pulse-advice-commands-mode 1)
   (define-key global-map (kbd "<s-escape>") #'prot-pulse-pulse-line))
 
-    (prot-emacs-builtin-package 'cus-edit
-  ;;    Disable the damn thing
-      (setq custom-file "~/.emacs.d/custom.el" ;; (make-temp-file "emacs-custom-")
-	    )
-      )
+(prot-emacs-builtin-package 'cus-edit
+;;    Disable the damn thing
+    (setq custom-file "~/.emacs.d/custom.el" ;; (make-temp-file "emacs-custom-")
+	  )
+    )
 
 (prot-emacs-builtin-package 'modus-themes
   ;; Add all your customizations prior to loading the themes
@@ -114,13 +114,14 @@
         ;; 'borderless, 'borderless-3d, 'borderless-moody, 'accented,
         ;; 'accented-3d, 'accented-moody, 'borderless-accented,
         ;; 'borderless-accented-3d, 'borderless-accented-moody
-        modus-themes-mode-line 'accented
+        modus-themes-mode-line 'borderless-accented
 
         ;; Options for `modus-themes-syntax': nil, 'faint,
         ;; 'yellow-comments, 'green-strings,
         ;; 'yellow-comments-green-strings, 'alt-syntax,
         ;; 'alt-syntax-yellow-comments, 'faint-yellow-comments
-        modus-themes-syntax 'alt-syntax
+        modus-themes-syntax nil
+       
 
         ;; Options for `modus-themes-hl-line': nil, 'intense-background,
         ;; 'accented-background, 'underline-neutral,
@@ -569,18 +570,18 @@
     (define-key map (kbd "s-r") #'prot-recentf-recent-files)
     (define-key map (kbd "C-x C-r") #'prot-recentf-recent-dirs)))
 
-    ;; (prot-emacs-elpa-package 'corfu
-    ;;   (dolist (mode '( message-mode-hook text-mode-hook prog-mode-hook
-    ;; 		     shell-mode-hook eshell-mode-hook))
-    ;;     (add-hook mode #'corfu-mode))
-    ;;   (define-key corfu-map (kbd "<tab>") #'corfu-complete))
+;; (prot-emacs-elpa-package 'corfu
+  ;;   (dolist (mode '( message-mode-hook text-mode-hook prog-mode-hook
+  ;; 		     shell-mode-hook eshell-mode-hook))
+  ;;     (add-hook mode #'corfu-mode))
+  ;;   (define-key corfu-map (kbd "<tab>") #'corfu-complete))
 
 
-  (load "corfu")
-    (dolist (mode '( message-mode-hook text-mode-hook prog-mode-hook
-		     shell-mode-hook eshell-mode-hook))
-      (add-hook mode #'corfu-mode))
-    (define-key corfu-map (kbd "<tab>") #'corfu-complete)
+(load "corfu")
+  (dolist (mode '( message-mode-hook text-mode-hook prog-mode-hook
+		   shell-mode-hook eshell-mode-hook))
+    (add-hook mode #'corfu-mode))
+  (define-key corfu-map (kbd "<tab>") #'corfu-complete)
 
 (prot-emacs-builtin-package 'dabbrev
   (setq dabbrev-abbrev-char-regexp "\\sw\\|\\s_")
@@ -684,99 +685,99 @@
   (setq xref-file-name-display 'project-relative)
   (setq xref-search-program 'grep))
 
-  (prot-emacs-builtin-package 'dired
-    (setq dired-recursive-copies 'always)
-    (setq dired-recursive-deletes 'always)
-    (setq delete-by-moving-to-trash t)
-     ;; (setq dired-listing-switches
-     ;;      "-AGFhlv  --time-style=long-iso")
-    (setq dired-dwim-target t)
-    (setq dired-auto-revert-buffer #'dired-directory-changed-p) ; also see `dired-do-revert-buffer'
+(prot-emacs-builtin-package 'dired
+  (setq dired-recursive-copies 'always)
+  (setq dired-recursive-deletes 'always)
+  (setq delete-by-moving-to-trash t)
+   ;; (setq dired-listing-switches
+   ;;      "-AGFhlv  --time-style=long-iso")
+  (setq dired-dwim-target t)
+  (setq dired-auto-revert-buffer #'dired-directory-changed-p) ; also see `dired-do-revert-buffer'
 
-    (add-hook 'dired-mode-hook #'dired-hide-details-mode)
-    (add-hook 'dired-mode-hook #'hl-line-mode))
+  (add-hook 'dired-mode-hook #'dired-hide-details-mode)
+  (add-hook 'dired-mode-hook #'hl-line-mode))
 
-  (prot-emacs-builtin-package 'dired-aux
-    (setq dired-isearch-filenames 'dwim)
-    ;; The following variables were introduced in Emacs 27.1
-    (setq dired-create-destination-dirs 'ask)
-    (setq dired-vc-rename-file t)
-    ;; And this is for Emacs 28
-    (setq dired-do-revert-buffer (lambda (dir) (not (file-remote-p dir))))
+(prot-emacs-builtin-package 'dired-aux
+  (setq dired-isearch-filenames 'dwim)
+  ;; The following variables were introduced in Emacs 27.1
+  (setq dired-create-destination-dirs 'ask)
+  (setq dired-vc-rename-file t)
+  ;; And this is for Emacs 28
+  (setq dired-do-revert-buffer (lambda (dir) (not (file-remote-p dir))))
 
-    ;; Those two functions are copied from the Emacs config of Omar
-    ;; Antolín Camarena: <https://github.com/oantolin/emacs-config>.
-    (defun contrib/cdb--bookmarked-directories ()
-      (bookmark-maybe-load-default-file)
-      (cl-loop for (name . props) in bookmark-alist
-	       for fn = (cdr (assq 'filename props))
-	       when (and fn (string-suffix-p "/" fn))
-	       collect (cons name fn)))
+  ;; Those two functions are copied from the Emacs config of Omar
+  ;; Antolín Camarena: <https://github.com/oantolin/emacs-config>.
+  (defun contrib/cdb--bookmarked-directories ()
+    (bookmark-maybe-load-default-file)
+    (cl-loop for (name . props) in bookmark-alist
+	     for fn = (cdr (assq 'filename props))
+	     when (and fn (string-suffix-p "/" fn))
+	     collect (cons name fn)))
 
-    (defun contrib/cd-bookmark (bm)
-      "Insert the path of a bookmarked directory."
-      (interactive
-       (list (let ((enable-recursive-minibuffers t))
-	       (completing-read
-		"Directory: " (contrib/cdb--bookmarked-directories) nil t))))
-      (when (minibufferp)
-	(delete-region (minibuffer-prompt-end) (point-max)))
-      (insert (cdr (assoc bm (contrib/cdb--bookmarked-directories)))))
+  (defun contrib/cd-bookmark (bm)
+    "Insert the path of a bookmarked directory."
+    (interactive
+     (list (let ((enable-recursive-minibuffers t))
+	     (completing-read
+	      "Directory: " (contrib/cdb--bookmarked-directories) nil t))))
+    (when (minibufferp)
+      (delete-region (minibuffer-prompt-end) (point-max)))
+    (insert (cdr (assoc bm (contrib/cdb--bookmarked-directories)))))
 
-    (let ((map dired-mode-map))
-      (define-key map (kbd "C-+") #'dired-create-empty-file)
-      (define-key map (kbd "M-s f") #'nil)
-      (define-key map (kbd "C-x v v") #'dired-vc-next-action)) ; Emacs 28
-    (define-key minibuffer-local-filename-completion-map (kbd "C-c d") #'contrib/cd-bookmark))
+  (let ((map dired-mode-map))
+    (define-key map (kbd "C-+") #'dired-create-empty-file)
+    (define-key map (kbd "M-s f") #'nil)
+    (define-key map (kbd "C-x v v") #'dired-vc-next-action)) ; Emacs 28
+  (define-key minibuffer-local-filename-completion-map (kbd "C-c d") #'contrib/cd-bookmark))
 
-  ;; ;; NOTE 2021-05-10: I do not use `find-dired' and related commands
-  ;; ;; because there are other tools that offer a better interface, such
-  ;; ;; as `consult-find', `consult-grep', `project-find-file',
-  ;; ;; `project-find-regexp', `prot-vc-git-grep'.
-  ;; (prot-emacs-builtin-package 'find-dired
-  ;;   (setq find-ls-option
-  ;;         '("-ls" . "-AGFhlv --group-directories-first --time-style=long-iso"))
-  ;;   (setq find-name-arg "-iname"))
+;; ;; NOTE 2021-05-10: I do not use `find-dired' and related commands
+;; ;; because there are other tools that offer a better interface, such
+;; ;; as `consult-find', `consult-grep', `project-find-file',
+;; ;; `project-find-regexp', `prot-vc-git-grep'.
+;; (prot-emacs-builtin-package 'find-dired
+;;   (setq find-ls-option
+;;         '("-ls" . "-AGFhlv --group-directories-first --time-style=long-iso"))
+;;   (setq find-name-arg "-iname"))
 
-  (prot-emacs-builtin-package 'prot-dired
-   (let ((map dired-mode-map))
-     (define-key map (kbd "M-n") #'prot-dired-subdirectory-next)
-     (define-key map (kbd "C-c C-n") #'prot-dired-subdirectory-next)
-     (define-key map (kbd "M-p") #'prot-dired-subdirectory-previous)
-     (define-key map (kbd "C-c C-p") #'prot-dired-subdirectory-next)))
+(prot-emacs-builtin-package 'prot-dired
+ (let ((map dired-mode-map))
+   (define-key map (kbd "M-n") #'prot-dired-subdirectory-next)
+   (define-key map (kbd "C-c C-n") #'prot-dired-subdirectory-next)
+   (define-key map (kbd "M-p") #'prot-dired-subdirectory-previous)
+   (define-key map (kbd "C-c C-p") #'prot-dired-subdirectory-next)))
 
-  (prot-emacs-builtin-package 'dired-x
-    (setq dired-clean-up-buffers-too t)
-    (setq dired-clean-confirm-killing-deleted-buffers t)
-    (setq dired-x-hands-off-my-keys t)    ; easier to show the keys I use
-    (setq dired-bind-man nil)
-    (setq dired-bind-info nil)
-    (let ((map global-map))
-      (define-key map (kbd "C-x C-j") #'dired-jump)
-      (define-key map (kbd "s-j") #'dired-jump)
-      (define-key map (kbd "C-x 4 C-j") #'dired-jump-other-window)
-      (define-key map (kbd "s-J") #'dired-jump-other-window))
-    (define-key dired-mode-map (kbd "I") #'dired-info))
+(prot-emacs-builtin-package 'dired-x
+  (setq dired-clean-up-buffers-too t)
+  (setq dired-clean-confirm-killing-deleted-buffers t)
+  (setq dired-x-hands-off-my-keys t)    ; easier to show the keys I use
+  (setq dired-bind-man nil)
+  (setq dired-bind-info nil)
+  (let ((map global-map))
+    (define-key map (kbd "C-x C-j") #'dired-jump)
+    (define-key map (kbd "s-j") #'dired-jump)
+    (define-key map (kbd "C-x 4 C-j") #'dired-jump-other-window)
+    (define-key map (kbd "s-J") #'dired-jump-other-window))
+  (define-key dired-mode-map (kbd "I") #'dired-info))
 
-  (prot-emacs-elpa-package 'dired-subtree
-    (setq dired-subtree-use-backgrounds nil)
-    (let ((map dired-mode-map))
-      (define-key map (kbd "<tab>") #'dired-subtree-toggle)
-      (define-key map (kbd "<C-tab>") #'dired-subtree-cycle)
-      (define-key map (kbd "<backtab>") #'dired-subtree-remove))) ; S-TAB
+(prot-emacs-elpa-package 'dired-subtree
+  (setq dired-subtree-use-backgrounds nil)
+  (let ((map dired-mode-map))
+    (define-key map (kbd "<tab>") #'dired-subtree-toggle)
+    (define-key map (kbd "<C-tab>") #'dired-subtree-cycle)
+    (define-key map (kbd "<backtab>") #'dired-subtree-remove))) ; S-TAB
 
-  (prot-emacs-builtin-package 'wdired
-    (setq wdired-allow-to-change-permissions t)
-    (setq wdired-create-parent-directories t))
+(prot-emacs-builtin-package 'wdired
+  (setq wdired-allow-to-change-permissions t)
+  (setq wdired-create-parent-directories t))
 
-  (prot-emacs-builtin-package 'image-dired
-    (setq image-dired-external-viewer "xdg-open")
-    (setq image-dired-thumb-size 80)
-    (setq image-dired-thumb-margin 2)
-    (setq image-dired-thumb-relief 0)
-    (setq image-dired-thumbs-per-row 4)
-    (define-key image-dired-thumbnail-mode-map
-      (kbd "<return>") #'image-dired-thumbnail-display-external))
+(prot-emacs-builtin-package 'image-dired
+  (setq image-dired-external-viewer "xdg-open")
+  (setq image-dired-thumb-size 80)
+  (setq image-dired-thumb-margin 2)
+  (setq image-dired-thumb-relief 0)
+  (setq image-dired-thumbs-per-row 4)
+  (define-key image-dired-thumbnail-mode-map
+    (kbd "<return>") #'image-dired-thumbnail-display-external))
 
 (prot-emacs-elpa-package 'trashed
   (setq trashed-action-confirmer 'y-or-n-p)
@@ -3011,113 +3012,128 @@ Can link to more than one message, if so all matching messages are shown."
 (setq create-lockfiles nil)
 
 ;; (load ~/.emacs.d/custom.el)
-;; (load "~/.emacs.d/personal/init.el")
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
+  ;; (load "~/.emacs.d/personal/init.el")
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1)
 
-(modus-themes-load-vivendi)
+  (modus-themes-load-vivendi)
 
-(require 'eglot)
-;(add-to-list 'exec-path " ")
+  
+  ;(add-to-list 'exec-path " ")
 
-(nyan-mode +1)
-(setq-default company-idle-delay 0.2)
-;; (add-to-list 'eglot-server-programs '(clojure-mode . ("clojure-lsp")))
-;; (add-to-list 'eglot-server-programs '(clojurec-mode . ("clojure-lsp" )))
-;; (add-to-list 'eglot-server-programs '(clojurescript-mode . ("clojure-lsp")))
-;; (add-to-list 'eglot-server-programs '(clojure-mode . ("clojure-lsp")))
-;; (add-hook 'clojure-mode-hook 'eglot-ensure)
-;; (add-hook 'clojurescript-mode-hook 'eglot-ensure)
-;; (add-hook 'clojurec-mode-hook 'eglot-ensure)
+  (nyan-mode +1)
+  (setq-default company-idle-delay 0.2)
+  ;; (add-to-list 'eglot-server-programs '(clojure-mode . ("clojure-lsp")))
+  ;; (add-to-list 'eglot-server-programs '(clojurec-mode . ("clojure-lsp" )))
+  ;; (add-to-list 'eglot-server-programs '(clojurescript-mode . ("clojure-lsp")))
+  ;; (add-to-list 'eglot-server-programs '(clojure-mode . ("clojure-lsp")))
+  ;; (add-hook 'clojure-mode-hook 'eglot-ensure)
+  ;; (add-hook 'clojurescript-mode-hook 'eglot-ensure)
+  ;; (add-hook 'clojurec-mode-hook 'eglot-ensure)
 
-(load "custom.el")
+  (load "custom.el")
 
-(modus-themes-load-vivendi)
+  (modus-themes-load-vivendi)
 
-(custom-set-variables '(highlight-indent-guides-method 'bitmap)
-                      '(line-spacing 0.2)
-                      ;; '(modus-theme-syntax 'nil)
-                      ;; '(modus-themes-paren-match 'intense-bold)
-                      ;; '(modus-themes-mode-line 'borderless-3d)
-                      )
+  (custom-set-variables '(highlight-indent-guides-method 'bitmap)
+			'(line-spacing 0.2)
+			;; '(modus-theme-syntax 'nil)
+			;; '(modus-themes-paren-match 'intense-bold)
+			;; '(modus-themes-mode-line 'borderless-3d)
+			)
 
-(set-face-attribute 'default nil :family "SF Mono2" :height 130 :weight 'medium)
-;(setq-default line-spacing 0.2)
+  (set-face-attribute 'default nil :family "SF Mono2" :height 130 :weight 'medium)
+  ;(setq-default line-spacing 0.2)
 
-(global-display-line-numbers-mode -1)
-(setq-default company-idle-delay 0.2)
+  (global-display-line-numbers-mode -1)
+  (setq-default company-idle-delay 0.2)
 
-(defun sidebar-toggle ()
-  "Toggle both `dired-sidebar' and `ibuffer-sidebar'."
-  (interactive)
-  (dired-sidebar-toggle-sidebar)
-  (ibuffer-sidebar-toggle-sidebar))
+  (defun sidebar-toggle ()
+    "Toggle both `dired-sidebar' and `ibuffer-sidebar'."
+    (interactive)
+    (dired-sidebar-toggle-sidebar)
+    (ibuffer-sidebar-toggle-sidebar))
 
 
-(global-set-key (kbd "C-x j") 'dired-sidebar-toggle-sidebar)
+  (global-set-key (kbd "C-x j") 'dired-sidebar-toggle-sidebar)
 
-;; (defun my-clojure-mode-hook ()
-;;   (clj-refactor-mode 1)
-;;   (yas-minor-mode 1) ; for adding require/use/import statements
-;;   ;; This choice of keybinding leaves cider-macroexpand-1 unbound
-;;   (cljr-add-keybindings-with-prefix "C-c C-m"))
-;; 
-;; (setq cljr-favor-prefix-notation nil)
-;; 
-;; (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
+  ;; (defun my-clojure-mode-hook ()
+  ;;   (clj-refactor-mode 1)
+  ;;   (yas-minor-mode 1) ; for adding require/use/import statements
+  ;;   ;; This choice of keybinding leaves cider-macroexpand-1 unbound
+  ;;   (cljr-add-keybindings-with-prefix "C-c C-m"))
+  ;; 
+  ;; (setq cljr-favor-prefix-notation nil)
+  ;; 
+  ;; (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
 
-(setq gc-cons-threshold (* 100 1024 1024)
+
+
+
+(defun find-refs ()
+    (interactive)
+    (lsp-find-references t))
+
+  (defun find-definition ()
+    "Try to find definition of cursor via LSP otherwise fallback to cider."
+    (interactive)
+    (let ((cursor (point))
+	  (buffer (current-buffer)))
+      (lsp-find-definition)
+      (when (and (eq buffer (current-buffer))
+		 (eq cursor (point)))
+	(cider-find-var))))
+
+
+  (require 'clojure-mode)
+  (require 'cider)
+  (define-key clojure-mode-map (kbd "M-.") #'find-definition)
+  (define-key cider-mode-map (kbd "M-.") #'find-definition)
+  (define-key clojurec-mode-map (kbd "M-.") #'find-definition)
+  (define-key clojurescript-mode-map (kbd "M-.") #'find-definition)
+  (setq clojure-align-separator 'entire)
+  (add-hook 'lsp-mode-hook (lambda () (lsp-headerline-breadcrumb-mode -1)))
+
+
+  ;(add-hook 'eglot--managed-mode-hook (lambda () (flymake-mode -1)))
+
+  ;; custom varaibles // TODO group them
+
+  (desktop-save-mode 1)
+
+
+  ;(set-face-attribute 'cursor nil :background (modus-themes-color-alts 'blue 'red))
+  (require 'which-key)
+;  (setq eglot-ignored-server-capabilites '(:documentHighlightProvider))
+  (setq lsp-eldoc-enable-hover 't)
+  (setq lsp-signature-auto-activate 't)
+  (setq lsp-signature-render-documentation 't)
+  (setq lsp-eldoc-enable-hover 'nil)
+  (setq lsp-eldoc-render-all 'nil)
+  (setq lsp-ui-doc-enable nil)
+ ; (prot-emacs-elpa-package 'exec-path-from-shell-initialize)
+  (prot-emacs-elpa-package 'lsp
+    (setq gc-cons-threshold (* 100 1024 1024)
       read-process-output-max (* 1024 1024)
       treemacs-space-between-root-nodes nil
       lsp-headerline-breadcrumb-enable nil
-      company-idle-delay 0.3
-      lsp-idle-delay 0.3
-      company-minimum-prefix-length 1      
-      ;; lsp-lens-enable t
+      company-idle-delay 0.5
+      lsp-idle-delay 0.5
+      company-minimum-prefix-length 1
+      lsp-lens-enable t
       lsp-enable-file-watchers nil
       lsp-file-watch-threshold 10000
-    ;  lsp-signature-auto-activate nil
-      ;;lsp-clojure-custom-server-command '("/usr/local/bin/clojure-lsp")
-      lsp-diagnostics-provider :none ;; or auto
-      lsp-enable-indentation 't ;; uncomment touse cider indentation instead of lsp
+      lsp-signature-auto-activate nil
+      lsp-clojure-custom-server-command '("/opt/homebrew/bin/clojure-lsp")
+      lsp-diagnostics-provider :none
+      lsp-enable-indentation nil ;; uncomment to use cider indentation instead of lsp
       ;; lsp-enable-completion-at-point nil ;; uncomment to use cider completion instead of lsp
 
-      ;; lsp-completion-provider :capf
-      )
-
-                                        ;(setq global-auto-highlight-symbol-mode t)
-
-;;(setq modus-themes-syntax 'faint)
-;;(require 'smartparens-config)
-                                        ;(add-hook 'lisp-mode #'turn-on-smartparens-strict-mode)
-
-;; clojure 
-;; (add-hook 'lisp-mode-hook #'enable-paredit-mode)
-;; (add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
-;; (add-hook 'clojure-mode-hook #'enable-paredit-mode)
-;; (add-hook 'clojurescript-mode-hook #'enable-paredit-mode)
-;; (add-hook 'clojurec-mode-hook #'enable-paredit-mode)
-
-
-
-(add-hook 'prog-mode-hook (lambda ()
-                               (enable-paredit-mode)
-                               (highlight-indent-guides-mode +1)))
-
-(add-hook 'cider-repl-mode-hook (lambda ()
-                               (enable-paredit-mode)))
-
-
-;; (add-hook 'org-mode-hook (lambda ()
-;;                                (enable-paredit-mode)))
-
-;(define-key 'minibufer (kdb "S <tab>") )
-(defun clojure-prep () (lsp))
-
-(add-hook 'clojure-mode-hook #'clojure-prep) 
-(add-hook 'clojurescript-mode-hook #'clojure-prep)
-(add-hook 'clojurec-mode-hook #'clojure-prep)
-                                        ;
+      lsp-completion-provider :capf
+      lsp-enable-on-type-formatting nil)
+    (add-hook 'clojure-mode-hook 'lsp)
+(add-hook 'clojurescript-mode-hook 'lsp)
+(add-hook 'clojurec-mode-hook 'lsp)
 (defun find-refs ()
   (interactive)
   (lsp-find-references t))
@@ -3132,30 +3148,29 @@ Can link to more than one message, if so all matching messages are shown."
                (eq cursor (point)))
       (cider-find-var))))
 
-
-(require 'clojure-mode)
-(require 'cider)
 (define-key clojure-mode-map (kbd "M-.") #'find-definition)
 (define-key cider-mode-map (kbd "M-.") #'find-definition)
 (define-key clojurec-mode-map (kbd "M-.") #'find-definition)
-(define-key clojurescript-mode-map (kbd "M-.") #'find-definition)
-(setq clojure-align-separator 'entire)
+(define-key clojurescript-mode-map (kbd "M-.") #'find-definition))
+  (prot-emacs-elpa-package 'clojure-mode)
+  (prot-emacs-elpa-package 'paredit
+  (add-hook 'clojure-mode-hook 'paredit-mode)
+   (add-hook 'clojurescript-mode-hook 'paredit-mode)
+   (add-hook 'clojurec-mode-hook 'paredit-mode))
+  (prot-emacs-elpa-package 'clojure-mode-extra-font-locking)
+  (prot-emacs-elpa-package 'company
+    (global-company-mode +1))
+  (prot-emacs-elpa-package 'cider)
+(prot-emacs-elpa-package 'nyan-mode)
+(prot-emacs-elpa-package 'exec-path-from-shell)
 
-(add-hook 'eglot--managed-mode-hook (lambda () (flymake-mode -1)))
 
-;; custom varaibles // TODO group them
-
-(desktop-save-mode 1)
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
 
-;(set-face-attribute 'cursor nil :background (modus-themes-color-alts 'blue 'red))
-(require 'which-key)
-(setq eglot-ignored-server-capabilites '(:documentHighlightProvider))
-(setq lsp-eldoc-enable-hover 't)
-(setq lsp-signature-auto-activate 't)
-(setq lsp-signature-render-documentation 't)
-(setq lsp-eldoc-enable-hover 'nil)
-(setq lsp-eldoc-render-all 'nil)
-(setq lsp-ui-doc-enable nil)
-;(which-key-mode)
-(load "custom.el")
+(prot-emacs-elpa-package 'swift-mode)
+  ;; (prot-emacs-install-ensured 'exec-path-from-shell-initialize)
+
+
+  ;(which-key-mode)
+  (load "custom.el")
