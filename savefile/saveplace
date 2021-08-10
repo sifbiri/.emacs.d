@@ -1,253 +1,28 @@
-;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/Users/sb/Projects/Other/konserve-monger/src/konserve_monger/"
-  (dired-filename . "/Users/sb/Projects/Other/konserve-monger/src/konserve_monger/core.clj"))
- ("/Users/sb/.emacs.d/personal/"
-  (dired-filename . "/Users/sb/.emacs.d/personal/init.el"))
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/sales.cljc" . 2175)
- ("/Users/sb/.emacs.d/init.el" . 16312)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/timezone.cljc" . 35325)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/save_middleware.clj" . 232)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/seeded_connection.clj"))
- ("/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters/key_value/write.cljc" . 1170)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example/ui/invoice_forms.cljc" . 1988)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/auto_resolvers.clj" . 361)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/address.cljc" . 1496)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/category.cljc" . 1203)
- ("/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters/key_value/pathom.cljc" . 3345)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.report_options.cljc" . 3483)
- ("/Users/sb/.emacs.d/prot-emacs.el" . 125786)
- ("/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters/key_value/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters/key_value/key_store.cljc"))
- ("/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters/key_value/konserve.cljc" . 613)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/item.cljc" . 957)
- ("/Users/sb/Projects/Other/kv-rad/src/play/play/konserve/queries.clj" . 822)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/config/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project/config/defaults.edn"))
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/operator.cljc"))
- ("/Users/sb/Projects/Other/fulcro-rad-demo/"
-  (dired-filename . "/Users/sb/Projects/Other/fulcro-rad-demo/README.adoc"))
- ("/Users/sb/.emacs.d/workspace/.cache/clojure.tools.namespace.repl.clj" . 466)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/sql/development.clj" . 5920)
- ("/Users/sb/Projects/Other/kv-rad/src/play/play/com/example/components/parser.clj" . 550)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/parser.clj" . 1109)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.form.cljc" . 5)
- ("/Users/sb/Desktop/Stuff/demo-project/com/example/components/database_queries.clj" . 614)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model.cljc" . 784)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/account_forms.cljc" . 4084)
- ("/Users/sb/Desktop/Stuff/demo-project/com/example/ui.cljc" . 3585)
- ("/Users/sb/Projects/Other/fulcro-rad-kvstore/src/demo-project/com/example/"
-  (dired-filename . "/Users/sb/Projects/Other/fulcro-rad-kvstore/src/demo-project/com/example/ui.cljs"))
- ("/Users/sb/Projects/Other/fulcro-rad-kvstore/src/demo-project/com/example/ui.cljs" . 5951)
- ("/Users/sb/Projects/Other/konserve-monger/deps.edn" . 304)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/database_queries.clj" . 916)
- ("/Users/sb/Projects/Other/kv-rad/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src"))
- ("/Users/sb/Projects/Other/kv-rad/src/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project"))
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project/com"))
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example"))
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/line_item_forms.cljc"))
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/" . 510)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/queries.cljc" . 1283)
- ("/Users/sb/.emacs.d/workspace/.cache/clojure.core.clj" . 224238)
- ("/Users/sb/Projects/Other/konserve-monger/src/konserve_monger/core.clj" . 4105)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui.cljs" . 6243)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/account.cljc" . 6756)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/authorization.clj" . 1045)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/pp_module_forms.cljc" . 505)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/pricing_plan.cljc" . 1264)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/line_item.cljc" . 998)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/seed.cljc" . 2982)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/invoice.cljc" . 1729)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/invoice_forms.cljc" . 5769)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/pp_module.cljc" . 1370)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/pricing_plan_forms.cljc" . 857)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.form_options.cljc" . 11652)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/management_forms.cljc" . 2880)
- ("/Users/sb/Projects/Other/kv-rad/deps.edn" . 2589)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.attributes_options.cljc" . 8273)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/model/operator.cljc" . 2779)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/deps.edn" . 3280)
- ("/Users/sb/Projects/Other/fulcro-rad-kvstore/deps.edn" . 6167)
- ("/Users/sb/Projects/Other/fulcro-rad-kvstore/src/demo-project/com/example/ui/account_forms.cljc" . 2720)
- ("/Users/sb/Projects/Other/fulcro-rad-kvstore/.dir-locals.el" . 392)
- ("/Users/sb/Projects/Other/fulcro-rad-kvstore/src/dev/user.clj" . 782)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example/model/line_item.cljc" . 1254)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example/ui/line_item_forms.cljc" . 1802)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example/model/account.cljc" . 1597)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example/model/invoice.cljc" . 1830)
- ("/Users/sb/.emacs.d/prot-emacs.org" . 59966)
- ("/Users/sb/.emacs.d/personal/init.el" . 22008)
- ("/Users/sb/Projects/Other/fulcro-rad-kvstore/src/demo-project/com/example/model/account.cljc" . 1422)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/config/defaults.edn" . 542)
- ("/Users/sb/"
-  (dired-filename . "/Users/sb/Examples"))
- ("/Users/sb/.zshrc" . 4400)
- ("/Users/sb/Projects/Other/kv-rad/src/main/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/main/com"))
- ("/Users/sb/Projects/Other/kv-rad/src/main/com/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic"))
- ("/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad"))
- ("/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters"))
- ("/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters/key_value"))
- ("/Users/sb/Projects/Other/kv-rad/src/main/com/fulcrologic/rad/database_adapters/key_value.cljc" . 7273)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.attributes.cljc" . 4447)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example/model/category.cljc" . 920)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example/ui/item_forms.cljc" . 3683)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example/ui/account_forms.cljc" . 3478)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example/ui/address_forms.cljc" . 528)
- ("/Users/sb/.config/clj-kondo/config.edn" . 134)
- ("/Users/sb/.emacs.d/elpa/company-20210606.135/company-autoloads.el" . 11992)
- ("/Users/sb/.emacs.d/elpa/rainbow-delimiters-20210515.1254/rainbow-delimiters-autoloads.el" . 1266)
- ("/Users/sb/.emacs.d/"
-  (dired-filename . "/Users/sb/.emacs.d/prot-emacs.elc"))
- ("/Users/sb/.emacs.d/elfeed/index" . 630)
- ("/Users/sb/.emacs.d/core/prelude-packages.el" . 2039)
- ("/Users/sb/.emacs.d-modus/prot-emacs.el" . 125556)
- ("/Users/sb/.emacs.d-modus/"
-  (dired-filename . "/Users/sb/.emacs.d-modus/prot-emacs.el"))
- ("/Users/sb/.emacs.d/elpa/web-mode-20210131.1758/web-mode-autoloads.el" . 481)
- ("/Users/sb/.emacs.d/personal/prelude-modules.el" . 1029)
- ("/Users/sb/Projects/Knowbie/Admin/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/Admin/src"))
- ("/Users/sb/Projects/Knowbie/Admin/src/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/Admin/src/main"))
- ("/Users/sb/Projects/Knowbie/Admin/src/main/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/Admin/src/main/app"))
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/Admin/src/main/app/util.cljc"))
- ("/Users/sb/.emacs.d-modus/prot-emacs.org" . 84900)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/server.clj" . 555)
- ("/Users/sb/.emacs.d-modus/early-init.el" . 2044)
- ("/Users/sb/.emacs.d/early-init.el" . 2044)
- ("/Users/sb/.emacs.d-modus/init.el" . 10344)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.authorization.cljc" . 5)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/client.cljs" . 1512)
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/ui/operator.cljs" . 1709)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/address_forms.cljc" . 526)
- ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/src/main/com/fulcrologic/fulcro/components.cljc" . 20038)
- ("/Users/sb/.emacs.d/savefile/recentf" . 7397)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/dev/user.clj" . 562)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/datomic/development.clj" . 4399)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/login_dialog.cljc" . 1348)
- ("/Users/sb/Projects/Other/kv-rad/src/play/play/com/fulcrologic/rad/database_adapters/key_value/pathom.clj" . 2642)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.pathom.clj" . 4799)
- ("/Users/sb/.emacs.d/workspace/.cache/cljc.java_time.local_date.cljc" . 12340)
- ("/Users/sb/.emacs.d/workspace/.cache/"
-  (dired-filename . "/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.authorization.cljc"))
- ("/Users/sb/.emacs.d/elpa/paren-face-20210127.1749/paren-face-autoloads.el" . 1696)
- ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/src/main/com/fulcrologic/fulcro/alpha/"
-  (dired-filename . "/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/src/main/com/fulcrologic/fulcro/alpha/raw_components2.cljc"))
- ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/src/main/com/fulcrologic/fulcro/"
-  (dired-filename . "/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/src/main/com/fulcrologic/fulcro/alpha"))
- ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/"
-  (dired-filename . "/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/.circleci"))
- ("/Users/sb/Projects/Knowbie/Admin/src/main/config/defaults.edn" . 108)
- ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/src/main/com/fulcrologic/fulcro/alpha/raw_components2.cljc" . 13253)
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/model/session.cljs" . 1014)
- ("/Users/sb/Projects/Knowbie/Admin/src/dev/user.clj" . 823)
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/ui/root.cljs" . 2540)
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/model/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/Admin/src/main/app/model/session.clj"))
- ("/Users/sb/.gitlibs/libs/com.fulcrologic/fulcro/4a3c22290e1e8242e7b3a8215713e5d1271598a1/src/main/com/fulcrologic/fulcro/mutations.cljc" . 23255)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.type_support.date_time.cljc" . 952)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/datomic/"
-  (dired-filename . "/Users/sb/Projects/Other/fulcro-rad-demo/src/datomic/.."))
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/dev/"
-  (dired-filename . "/Users/sb/Projects/Other/fulcro-rad-demo/src/dev/.."))
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/"
-  (dired-filename . "/Users/sb/Projects/Other/fulcro-rad-demo/src/shared"))
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/"
-  (dired-filename . "/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/config"))
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/config/"
-  (dired-filename . "/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/config/defaults.edn"))
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/config/defaults.edn" . 552)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/sales_report.cljc" . 1293)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/item_forms.cljc" . 2958)
- ("/Users/sb/Projects/Knowbie/Admin/deps.edn" . 1457)
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/ui/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/Admin/src/main/app/ui/operator.cljs"))
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/model/operator.cljs" . 4171)
- ("/Users/sb/Projects/Knowbie/Admin/src/main/app/model/session.clj" . 2010)
- ("/Users/sb/.emacs.d/elpa/dired-sidebar-20210411.2315/dired-sidebar-autoloads.el" . 1224)
- ("/Users/sb/.emacs.d/elpa/dired-subtree-20210105.1127/dired-subtree-autoloads.el" . 3057)
- ("/Users/sb/.emacs.d/elpa/dired-hacks-utils-20201005.2318/dired-hacks-utils-autoloads.el" . 460)
- ("/Users/sb/.emacs.d/elpa/ibuffer-sidebar-20210508.836/ibuffer-sidebar-autoloads.el" . 782)
- ("/Users/sb/.emacs.d/personal/preload/init.el" . 2)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/"
-  (dired-filename . "/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example"))
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example/"
-  (dired-filename . "/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example/ui.cljc"))
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/datomic/com/"
-  (dired-filename . "/Users/sb/Projects/Other/fulcro-rad-demo/src/datomic/com/example"))
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/datomic/com/example/"
-  (dired-filename . "/Users/sb/Projects/Other/fulcro-rad-demo/src/datomic/com/example/components"))
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/datomic/com/example/components/"
-  (dired-filename . "/Users/sb/Projects/Other/fulcro-rad-demo/src/datomic/com/example/components/database_queries.clj"))
- ("/Users/sb/Projects/Other/kv-rad/src/dev/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad/src/dev/.."))
- ("/Users/sb/.emacs.d/core/prelude-ui.el" . 2668)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/ring_middleware.clj" . 1756)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.routing.html5_history.cljc" . 7438)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.rendering.semantic_ui.semantic_ui_controls.cljc" . 2401)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/seeded_connection.clj" . 1210)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/datomic/com/example/components/parser.clj" . 2301)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/datomic/com/example/components/database_queries.clj" . 1941)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/ui/line_item_forms.cljc" . 4478)
- ("/Users/sb/Projects/Other/fulcro-rad-demo/src/shared/com/example/components/server.clj" . 528)
- ("/Users/sb/Projects/Other/kv-rad/src/demo-project/com/example/components/config.clj" . 410)
- ("/Users/sb/.emacs.d/workspace/.cache/com.fulcrologic.rad.middleware.save_middleware.cljc" . 1311)
- ("/Users/sb/Projects/Other/kv-rad/fulcro-rad-kvstore-redis.iml" . 3506)
- ("/Users/sb/.emacs.d/elpa/highlight-indent-guides-20200820.2328/highlight-indent-guides.el" . 46853)
- ("/Users/sb/.emacs.d/elpa/highlight-indent-guides-20200820.2328/highlight-indent-guides-autoloads.el" . 1260)
- ("/Users/sb/.emacs.d/elpa/indent-guide-20210115.400/indent-guide-autoloads.el" . 1765)
- ("/Users/sb/Projects/Knowbie/iOS/Knowbie/Model/Module2.swift" . 592)
- ("/Users/sb/Projects/Knowbie/iOS/Knowbie/Model/Module.swift" . 37)
- ("/Users/sb/Projects/Knowbie/iOS/Knowbie/Model/Chapter.swift" . 195)
- ("/Users/sb/Projects/Knowbie/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/.."))
- ("/Users/sb/Projects/"
-  (dired-filename . "/Users/sb/Projects/Other"))
- ("/Users/sb/Projects/Other/"
-  (dired-filename . "/Users/sb/Projects/Other/kv-rad"))
- ("/Users/sb/Projects/Knowbie/iOS/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/iOS/Knowbie"))
- ("/Users/sb/Projects/Knowbie/iOS/Knowbie/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/iOS/Knowbie/Model"))
- ("/Users/sb/Projects/Knowbie/iOS/Knowbie/Model/"
-  (dired-filename . "/Users/sb/Projects/Knowbie/iOS/Knowbie/Model/Module.swift"))
- ("/Users/sb/.emacs.d/elpa/swift-mode-20210518.728/swift-mode-autoloads.el" . 7993)
- ("/Users/sb/.emacs.d/elpa/inf-ruby-20210427.1755/inf-ruby-autoloads.el" . 3676)
- ("/Users/sb/.emacs.d/elpa/ivy-20210602.1349/ivy-autoloads.el" . 5416)
- ("/Users/sb/.emacs.d/elpa/jedi-core-20210503.1315/jedi-core-autoloads.el" . 3823)
- ("/Users/sb/.emacs.d/elpa/js2-mode-20210414.2241/js2-mode-autoloads.el" . 2917)
- ("/Users/sb/.emacs.d/elpa/lsp-ivy-20210518.2034/lsp-ivy-autoloads.el" . 921)
- ("/Users/sb/.emacs.d/elpa/lsp-mode-20210601.1642/lsp-mode-autoloads.el" . 23405)
- ("/Users/sb/.emacs.d/elpa/lsp-treemacs-20210502.1804/lsp-treemacs-autoloads.el" . 2729)
- ("/Users/sb/.emacs.d/elpa/magit-20210531.1524/magit-autoloads.el" . 87720)
- ("/Users/sb/.emacs.d/elpa/git-commit-20210525.844/git-commit-autoloads.el" . 685)
- ("/Users/sb/.emacs.d/elpa/magit-section-20210525.844/magit-section-autoloads.el" . 540)
- ("/Users/sb/.emacs.d/elpa/dash-20210602.1928/dash-autoloads.el" . 2474)
- ("/Users/sb/.emacs.d/elpa/markdown-mode-20210530.1825/markdown-mode-autoloads.el" . 1404)
- ("/Users/sb/.emacs.d/elpa/markdown-toc-20210515.902/markdown-toc-autoloads.el" . 1962)
- ("/Users/sb/.emacs.d/elpa/multiple-cursors-20210323.1128/multiple-cursors-autoloads.el" . 11936)
- ("/Users/sb/.emacs.d/elpa/popup-20210317.138/popup-autoloads.el" . 392)
- ("/Users/sb/.emacs.d/elpa/posframe-20210601.244/posframe-autoloads.el" . 7314)
- ("/Users/sb/.emacs.d/elpa/projectile-20210531.547/projectile-autoloads.el" . 21220)
- ("/Users/sb/.emacs.d/elpa/projectile-rails-20210325.2120/projectile-rails-autoloads.el" . 2570)
- ("/Users/sb/.emacs.d/elpa/rust-mode-20210423.1157/rust-mode-autoloads.el" . 1864)
- ("/Users/sb/.emacs.d/elpa/smartparens-20210529.1129/smartparens-autoloads.el" . 12030)
- ("/Users/sb/.emacs.d/elpa/transient-20210530.2252/transient-autoloads.el" . 2700)
- ("/Users/sb/.emacs.d/elpa/treemacs-20210524.1338/treemacs-autoloads.el" . 20231)
- ("/Users/sb/.emacs.d/elpa/vterm-20210409.1558/vterm-autoloads.el" . 2045)
- ("/Users/sb/.emacs.d/elpa/which-key-20210601.252/which-key-autoloads.el" . 7270)
- ("/Users/sb/.emacs.d/elpa/with-editor-20210524.1654/with-editor-autoloads.el" . 3656)
- ("/Users/sb/.emacs.d/elpa/yaml-mode-20210508.1641/yaml-mode-autoloads.el" . 714))
+;;; -*- coding: utf-8 -*-
+(("/Users/biri/demo/fulcro-rad-demo/src/datomic/development.clj" . 1000)
+ ("/Users/biri/.emacs.d/savefile/recentf" . 554)
+ ("/Users/biri/.emacs.d/elpa/cider-20210729.521/cider-autoloads.el" . 28130)
+ ("/Users/biri/.emacs.d/elpa/parseedn-20210729.1657/parseedn-autoloads.el" . 410)
+ ("/Users/biri/.emacs.d/elpa/parseclj-20201012.712/parseclj-autoloads.el" . 1189)
+ ("/Users/biri/.emacs.d/elpa/a-20201203.1927/a-autoloads.el" . 368)
+ ("/Users/biri/.emacs.d/elpa/sesman-20190909.1754/sesman-autoloads.el" . 3203)
+ ("/Users/biri/demo/fulcro-rad-demo/dir-locals.el" . 3)
+ ("/Users/biri/demo/fulcro-rad-demo/"
+  (dired-filename . "/Users/biri/demo/fulcro-rad-demo/deps.edn"))
+ ("/Users/biri/demo/fulcro-rad-demo/deps.edn" . 1736)
+ ("/Users/biri/demo/fulcro-rad-demo/src/datomic/"
+  (dired-filename . "/Users/biri/demo/fulcro-rad-demo/src/datomic/development.clj"))
+ ("/Users/biri/.emacs.d/modules/prelude-clojure.el" . 1193)
+ ("/Users/biri/.emacs.d/modules/"
+  (dired-filename . "/Users/biri/.emacs.d/modules/.."))
+ ("/Users/biri/.emacs.d/"
+  (dired-filename . "/Users/biri/.emacs.d/sample"))
+ ("/Users/biri/.emacs.d/sample/prelude-modules.el" . 2394)
+ ("/Users/biri/.emacs.d/sample/"
+  (dired-filename . "/Users/biri/.emacs.d/sample/prelude-modules.el"))
+ ("/Users/biri/.emacs.d/elpa/clojure-mode-20210706.1318/clojure-mode-autoloads.el" . 4113)
+ ("/Users/biri/.emacs.d/elpa/lsp-mode-20210808.2036/lsp-mode-autoloads.el" . 24327)
+ ("/Users/biri/.emacs.d/elpa/f-20210624.1103/f-autoloads.el" . 368)
+ ("/Users/biri/.emacs.d/elpa/markdown-mode-20210809.240/markdown-mode-autoloads.el" . 1404)
+ ("/Users/biri/.emacs.d/elpa/lv-20200507.1518/lv-autoloads.el" . 374)
+ ("/Users/biri/.emacs.d/elpa/exec-path-from-shell-20201215.33/exec-path-from-shell-autoloads.el" . 1439))

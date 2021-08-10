@@ -1,7 +1,7 @@
 ;;; -*- lisp-data -*-
-(("~/Projects/Knowbie/Admin/")
+(("~/Projects/Knowbie/iOS/")
+ ("~/Projects/Knowbie/Admin/")
  ("~/.emacs.d/")
- ("~/Projects/Knowbie/iOS/")
  ("~/Projects/Other/kv-rad/")
  ("~/.gitlibs/libs/com.fulcrologic/fulcro-rad/d30b318c75b2938555ff12d617b62c21ba041957/")
  ("~/Projects/Other/fulcro-rad-semantic-ui/")

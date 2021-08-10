@@ -93,8 +93,6 @@
   ;; configurations.  Though I still like what I have here.
 
   (setq
-        
-        modus-themes-slanted-constructs nil
         modus-themes-bold-constructs nil
 
         modus-themes-no-mixed-fonts nil
@@ -118,9 +116,9 @@
 
         ;; Options for `modus-themes-syntax': nil, 'faint,
         ;; 'yellow-comments, 'green-strings,
-        ;; 'yellow-comments-green-strings, 'alt-syntax,
+        ;; 'yellow-comments-green-strings, 'faint,
         ;; 'alt-syntax-yellow-comments, 'faint-yellow-comments
-        modus-themes-syntax nil
+        modus-themes-syntax 'faint
        
 
         ;; Options for `modus-themes-hl-line': nil, 'intense-background,
@@ -190,6 +188,8 @@
         (modus-themes-load-operandi)
       (modus-themes-load-vivendi)))
 
+  (modus-themes-load-vivendi)
+
    
 
   ;; Also check my package configurations for `prot-fonts' because I use
@@ -204,8 +204,26 @@
   ;; Make sure to read the `prot-fonts-typeface-sets-alist' doc string,
   ;; as it explains what those property lists should contain.
   (setq prot-fonts-typeface-sets-alist  
-        '((laptop . ( :fixed-pitch-family "SF Mono2"
+        '((laptop . ( :fixed-pitch-family "SF Mono"
+                      :fixed-pitch-regular-weight regular
+                      :fixed-pitch-heavy-weight bold
+                      :fixed-pitch-height 120
+                      :fixed-pitch-line-spacing 0.1
+                      :variable-pitch-family "FiraGO"
+                      :variable-pitch-height 1.0
+                      :variable-pitch-regular-weight normal))
+
+	  (laptop3 . ( :fixed-pitch-family "SF Mono2"
                       :fixed-pitch-regular-weight medium
+                      :fixed-pitch-heavy-weight bold
+                      :fixed-pitch-height 130
+                      :fixed-pitch-line-spacing 0.2
+                      :variable-pitch-family "FiraGO"
+                      :variable-pitch-height 1.0
+                      :variable-pitch-regular-weight normal))
+
+	  (laptop2 . (:fixed-pitch-family "SF Mono"
+                      :fixed-pitch-regular-weight regular
                       :fixed-pitch-heavy-weight bold
                       :fixed-pitch-height 130
                       :fixed-pitch-line-spacing 0.2
@@ -222,7 +240,7 @@
                        :variable-pitch-height nil
                        :variable-pitch-regular-weight normal))
 
-          (presentation . ( :fixed-pitch-family "Hack"
+          (presentation . (:fixed-pitch-family "Hack"
                             :fixed-pitch-regular-weight normal
                             :fixed-pitch-heavy-weight bold
                             :fixed-pitch-height 130
@@ -244,9 +262,13 @@
   ;; it to an external monitor (how I normally set it up on my desk).
   (setq prot-fonts-max-small-resolution-width 1366)
 
+  
+
   ;; And this just sets the right font depending on whether my laptop is
   ;; connected to an external monitor or not.
   (prot-fonts-fonts-per-monitor)
+
+  (prot-fonts-set-fonts 'laptop)
 
   ;; See theme section for this hook and also read the doc string of
   ;; `prot-fonts-restore-last'.
@@ -2076,8 +2098,8 @@ file which do not already have one."
   (let ((map global-map))
     (define-key map (kbd "C-c m") #'notmuch)
     (define-key map (kbd "C-x m") #'notmuch-mua-new-mail)) ; override `compose-mail'
-  (let ((map notmuch-search-mode-map))
-    (define-key map (kbd "/") #'notmuch-search-filter))) ; alias for l
+   (let ((map notmuch-search-mode-map))
+     (define-key map (kbd "/") #'notmuch-search-filter))) ; alias for l
 
 (prot-emacs-builtin-package 'prot-notmuch
   (setq prot-notmuch-search-field-width 100)
@@ -3010,167 +3032,3 @@ Can link to more than one message, if so all matching messages are shown."
 (setq kept-new-versions 6)
 (setq kept-old-versions 2)
 (setq create-lockfiles nil)
-
-;; (load ~/.emacs.d/custom.el)
-  ;; (load "~/.emacs.d/personal/init.el")
-  (tool-bar-mode -1)
-  (scroll-bar-mode -1)
-
-  (modus-themes-load-vivendi)
-
-  
-  ;(add-to-list 'exec-path " ")
-
-  (nyan-mode +1)
-  (setq-default company-idle-delay 0.2)
-  ;; (add-to-list 'eglot-server-programs '(clojure-mode . ("clojure-lsp")))
-  ;; (add-to-list 'eglot-server-programs '(clojurec-mode . ("clojure-lsp" )))
-  ;; (add-to-list 'eglot-server-programs '(clojurescript-mode . ("clojure-lsp")))
-  ;; (add-to-list 'eglot-server-programs '(clojure-mode . ("clojure-lsp")))
-  ;; (add-hook 'clojure-mode-hook 'eglot-ensure)
-  ;; (add-hook 'clojurescript-mode-hook 'eglot-ensure)
-  ;; (add-hook 'clojurec-mode-hook 'eglot-ensure)
-
-  (load "custom.el")
-
-  (modus-themes-load-vivendi)
-
-  (custom-set-variables '(highlight-indent-guides-method 'bitmap)
-			'(line-spacing 0.2)
-			;; '(modus-theme-syntax 'nil)
-			;; '(modus-themes-paren-match 'intense-bold)
-			;; '(modus-themes-mode-line 'borderless-3d)
-			)
-
-  (set-face-attribute 'default nil :family "SF Mono2" :height 130 :weight 'medium)
-  ;(setq-default line-spacing 0.2)
-
-  (global-display-line-numbers-mode -1)
-  (setq-default company-idle-delay 0.2)
-
-  (defun sidebar-toggle ()
-    "Toggle both `dired-sidebar' and `ibuffer-sidebar'."
-    (interactive)
-    (dired-sidebar-toggle-sidebar)
-    (ibuffer-sidebar-toggle-sidebar))
-
-
-  (global-set-key (kbd "C-x j") 'dired-sidebar-toggle-sidebar)
-
-  ;; (defun my-clojure-mode-hook ()
-  ;;   (clj-refactor-mode 1)
-  ;;   (yas-minor-mode 1) ; for adding require/use/import statements
-  ;;   ;; This choice of keybinding leaves cider-macroexpand-1 unbound
-  ;;   (cljr-add-keybindings-with-prefix "C-c C-m"))
-  ;; 
-  ;; (setq cljr-favor-prefix-notation nil)
-  ;; 
-  ;; (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
-
-
-
-
-(defun find-refs ()
-    (interactive)
-    (lsp-find-references t))
-
-  (defun find-definition ()
-    "Try to find definition of cursor via LSP otherwise fallback to cider."
-    (interactive)
-    (let ((cursor (point))
-	  (buffer (current-buffer)))
-      (lsp-find-definition)
-      (when (and (eq buffer (current-buffer))
-		 (eq cursor (point)))
-	(cider-find-var))))
-
-
-  (require 'clojure-mode)
-  (require 'cider)
-  (define-key clojure-mode-map (kbd "M-.") #'find-definition)
-  (define-key cider-mode-map (kbd "M-.") #'find-definition)
-  (define-key clojurec-mode-map (kbd "M-.") #'find-definition)
-  (define-key clojurescript-mode-map (kbd "M-.") #'find-definition)
-  (setq clojure-align-separator 'entire)
-  (add-hook 'lsp-mode-hook (lambda () (lsp-headerline-breadcrumb-mode -1)))
-
-
-  ;(add-hook 'eglot--managed-mode-hook (lambda () (flymake-mode -1)))
-
-  ;; custom varaibles // TODO group them
-
-  (desktop-save-mode 1)
-
-
-  ;(set-face-attribute 'cursor nil :background (modus-themes-color-alts 'blue 'red))
-  (require 'which-key)
-;  (setq eglot-ignored-server-capabilites '(:documentHighlightProvider))
-  (setq lsp-eldoc-enable-hover 't)
-  (setq lsp-signature-auto-activate 't)
-  (setq lsp-signature-render-documentation 't)
-  (setq lsp-eldoc-enable-hover 'nil)
-  (setq lsp-eldoc-render-all 'nil)
-  (setq lsp-ui-doc-enable nil)
- ; (prot-emacs-elpa-package 'exec-path-from-shell-initialize)
-  (prot-emacs-elpa-package 'lsp
-    (setq gc-cons-threshold (* 100 1024 1024)
-      read-process-output-max (* 1024 1024)
-      treemacs-space-between-root-nodes nil
-      lsp-headerline-breadcrumb-enable nil
-      company-idle-delay 0.5
-      lsp-idle-delay 0.5
-      company-minimum-prefix-length 1
-      lsp-lens-enable t
-      lsp-enable-file-watchers nil
-      lsp-file-watch-threshold 10000
-      lsp-signature-auto-activate nil
-      lsp-clojure-custom-server-command '("/opt/homebrew/bin/clojure-lsp")
-      lsp-diagnostics-provider :none
-      lsp-enable-indentation nil ;; uncomment to use cider indentation instead of lsp
-      ;; lsp-enable-completion-at-point nil ;; uncomment to use cider completion instead of lsp
-
-      lsp-completion-provider :capf
-      lsp-enable-on-type-formatting nil)
-    (add-hook 'clojure-mode-hook 'lsp)
-(add-hook 'clojurescript-mode-hook 'lsp)
-(add-hook 'clojurec-mode-hook 'lsp)
-(defun find-refs ()
-  (interactive)
-  (lsp-find-references t))
-
-(defun find-definition ()
-  "Try to find definition of cursor via LSP otherwise fallback to cider."
-  (interactive)
-  (let ((cursor (point))
-        (buffer (current-buffer)))
-    (lsp-find-definition)
-    (when (and (eq buffer (current-buffer))
-               (eq cursor (point)))
-      (cider-find-var))))
-
-(define-key clojure-mode-map (kbd "M-.") #'find-definition)
-(define-key cider-mode-map (kbd "M-.") #'find-definition)
-(define-key clojurec-mode-map (kbd "M-.") #'find-definition)
-(define-key clojurescript-mode-map (kbd "M-.") #'find-definition))
-  (prot-emacs-elpa-package 'clojure-mode)
-  (prot-emacs-elpa-package 'paredit
-  (add-hook 'clojure-mode-hook 'paredit-mode)
-   (add-hook 'clojurescript-mode-hook 'paredit-mode)
-   (add-hook 'clojurec-mode-hook 'paredit-mode))
-  (prot-emacs-elpa-package 'clojure-mode-extra-font-locking)
-  (prot-emacs-elpa-package 'company
-    (global-company-mode +1))
-  (prot-emacs-elpa-package 'cider)
-(prot-emacs-elpa-package 'nyan-mode)
-(prot-emacs-elpa-package 'exec-path-from-shell)
-
-
-(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
-
-
-(prot-emacs-elpa-package 'swift-mode)
-  ;; (prot-emacs-install-ensured 'exec-path-from-shell-initialize)
-
-
-  ;(which-key-mode)
-  (load "custom.el")
