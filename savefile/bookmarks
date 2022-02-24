@@ -1,0 +1,14 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("gemini://dev-docs.sig-gis.com/"
+ (position . 59)
+ (location . "gemini://dev-docs.sig-gis.com/")
+ (handler . elpher-bookmark-jump))
+("org-refile-last-stored"
+ (filename . "~/Library/Mobile Documents/com~apple~CloudDocs/org/Sennati.org")
+ (front-context-string . "** https://www.l")
+ (rear-context-string . ") F*** them :) \n")
+ (position . 17051))
+)

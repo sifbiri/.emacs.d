@@ -1,0 +1,5 @@
+ls
+pwd
+ls
+git fsck --lost-found
+git reflog
