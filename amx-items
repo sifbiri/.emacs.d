@@ -1,0 +1,27 @@
+
+;; ----- amx-history -----
+(
+ org-mode
+ global-highlight-parentheses-mode
+ highlight-parentheses-mode
+ lsp
+ cider-jack-in
+ clojure-mode
+ eval-buffer
+)
+
+;; ----- amx-data -----
+(
+ (amx-mode . 5)
+ (org-todo . 1)
+ (package-install . 1)
+ (marginalia-mode . 1)
+ (org-time-stamp . 1)
+ (cider-jack-in . 2)
+ (eval-buffer . 1)
+ (clojure-mode . 2)
+ (lsp . 1)
+ (highlight-parentheses-mode . 1)
+ (global-highlight-parentheses-mode . 1)
+ (org-mode . 1)
+)

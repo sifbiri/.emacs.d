@@ -1,0 +1,1 @@
+/Users/sifoub/.emacs.d/straight/repos/lsp-mode/lsp-headerline.el

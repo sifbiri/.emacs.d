@@ -1,0 +1,1 @@
+/Users/sifoub/.emacs.d/straight/repos/consult/consult-selectrum.el
